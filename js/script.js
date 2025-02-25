@@ -868,7 +868,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         ofertas.forEach(oferta => {
             const table = document.createElement('table');
-            
+
             // Título da oferta
             const tituloRow = document.createElement('tr');
             const tituloHeader = document.createElement('th');
@@ -902,9 +902,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const row = document.createElement('tr');
                     const labelCell = document.createElement('th');
                     const valueCell = document.createElement('td');
-                    
+
                     labelCell.textContent = label;
-                    
+
                     if (label === 'Contacto') {
                         const link = document.createElement('a');
                         link.href = value;
@@ -914,7 +914,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         valueCell.textContent = value;
                     }
-                    
+
                     row.appendChild(labelCell);
                     row.appendChild(valueCell);
                     table.appendChild(row);
@@ -932,7 +932,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cursos.forEach(curso => {
             const table = document.createElement('table');
-            
+
             // Título do curso
             const tituloRow = document.createElement('tr');
             const tituloHeader = document.createElement('th');
@@ -959,9 +959,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const row = document.createElement('tr');
                     const labelCell = document.createElement('th');
                     const valueCell = document.createElement('td');
-                    
+
                     labelCell.textContent = label;
-                    
+
                     if (label === 'Contacto' && value.startsWith('http')) {
                         const link = document.createElement('a');
                         link.href = value;
@@ -971,7 +971,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         valueCell.textContent = value;
                     }
-                    
+
                     row.appendChild(labelCell);
                     row.appendChild(valueCell);
                     table.appendChild(row);
